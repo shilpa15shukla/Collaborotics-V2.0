@@ -14,7 +14,7 @@ function Login() {
     setError("");
     try {
       const res = await axios.post(
-  ""https://collaborotics-v2-0-1.onrender.com/api/auth/login"",
+  "https://collaborotics-v2-0-1.onrender.com/api/auth/login",
   { email, password }
 );
       localStorage.setItem("token", res.data.token);
